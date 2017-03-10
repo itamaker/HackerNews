@@ -2,18 +2,19 @@
 //  HairlineView.swift
 //  HackerNews
 //
-//  Created by Amit Burstein on 6/11/14.
-//  Copyright (c) 2014 Amit Burstein. All rights reserved.
+//  Copyright (c) 2015 Amit Burstein. All rights reserved.
+//  See LICENSE for licensing information.
 //
 
 import UIKit
 
 class HairlineView : UIView {
-    
-    override func awakeFromNib() {
-        layer.borderColor = backgroundColor.CGColor
-        layer.borderWidth = (1.0 / UIScreen.mainScreen().scale) / 2
-        backgroundColor = UIColor.clearColor()
-    }
-    
+  
+  // MARK: UINibLoading
+  
+  override func awakeFromNib() {
+    layer.borderColor = backgroundColor?.cgColor
+    layer.borderWidth = (1.0 / UIScreen.main.scale) / 2
+    backgroundColor = UIColor.clear
+  }
 }

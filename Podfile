@@ -1,3 +1,15 @@
-platform :ios, '7.0'
+def pods
+  pod 'Firebase', '2.5.0'
+end
 
-pod 'libHN', '~> 1.1.1'
+target 'HackerNews' do
+  pods
+end
+
+target 'HackerNewsTests' do
+  pods
+end
+
+target 'HackerNewsUITests' do
+  pods
+end
